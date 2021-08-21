@@ -1,8 +1,18 @@
 
-let title = document.querySelector(".title")
+let title = document.querySelector('.title');
 
-title.classList.add('title1')
+let questao = document.querySelector('.questao');
 
-title title1
-title.classList.remove('title')
+let opcao = document.querySelector('.opcao');
 
+title.classList.add('palha');
+
+title.classList.remove('title');
+
+questao.classList.add('milho');
+
+questao.classList.remove('questao');
+
+opcao.classList.add('sabugo');
+
+opcao.classList.remove('opcao');
