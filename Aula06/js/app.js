@@ -42,18 +42,27 @@ const listaDeFelinos = [
 let contador = 0;
 
 function alimentarFelinos() {
-    
-let divContainerFelinos = document.querySelector('div.containerFelinos');
-    
+
+    let divContainerFelinos = document.querySelector('div.containerFelinos');
+
     if (contador < listaDeFelinos.length) {
 
         let divFelinos = document.createElement('div');
         divFelinos.classList.add('felinos')
 
-        divContainerFelinos.appendChild(divFelinos); 
+        divContainerFelinos.appendChild(divFelinos);
 
         let title = document.createElement('h2');
         title.innerHTML = listaDeFelinos[contador].title;
+        
+
+
+        let felinoAlimentado = document.querySelector('h3.felinoAlimentado')
+        felinoAlimentado.innerHTML += listaDeFelinos[contador].title;
+        let contadorAlimentado = listaDeFelinos.length - 1;
+        if(contador<contadorAlimentado){
+            felinoAlimentado.innerHTML += " - ";
+        }
 
         let imgUrl = document.createElement("img");
         imgUrl.src = listaDeFelinos[contador].imgUrl;
@@ -73,11 +82,8 @@ let divContainerFelinos = document.querySelector('div.containerFelinos');
 
         contador++;
 
-    }
-    if (contador == listaDeFelinos.length) {
-        contador++;
-
+    }else {
         return alert('Estão todos alimentados.');
-
     }
+
 }
