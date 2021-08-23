@@ -53,17 +53,15 @@ function alimentarFelinos() {
         divContainerFelinos.appendChild(divFelinos);
 
         let title = document.createElement('h2');
-        title.innerHTML = listaDeFelinos[contador].title;
-        
+        title.innerHTML = listaDeFelinos[contador].title;  
 
 
         let felinoAlimentado = document.querySelector('h3.felinoAlimentado')
-        felinoAlimentado.innerHTML += listaDeFelinos[contador].title;
-        let contadorAlimentado = listaDeFelinos.length - 1;
-        if(contador<contadorAlimentado){
+        if(contador<listaDeFelinos.length && contador>0){
             felinoAlimentado.innerHTML += " - ";
         }
-
+        felinoAlimentado.innerHTML += listaDeFelinos[contador].title;
+        
         let imgUrl = document.createElement("img");
         imgUrl.src = listaDeFelinos[contador].imgUrl;
 
