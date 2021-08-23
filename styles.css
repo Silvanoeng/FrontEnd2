@@ -1,7 +1,7 @@
 body{
     font-family: 'Allerta Stencil', sans-serif;
     color: rgb(41, 1, 1);
-    background-image: url("/img/farol.jpg");
+    background-image: url("/farol.jpg");
     background-size: 100%;
     background-origin: content-box;
     background-repeat: no-repeat;
