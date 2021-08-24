@@ -1,7 +1,7 @@
 body{
     font-family: 'Allerta Stencil', sans-serif;
     color: rgb(41, 1, 1);
-    background-image: url("floresta1.webp");
+    background-image: url("../img/floresta1.webp");
     background-size: 100%;
     background-origin: content-box;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@ body{
     height: 100px;
     width: 100px;
     background: none;
-    background-image: url("casa.png");
+    background-image: url("../img/casa.png");
     background-size: 100%;
     border: none;
     position: fixed;
@@ -42,7 +42,7 @@ body{
     height: 100px;
     width: 100px;
     background: none;
-    background-image: url("carne.png");
+    background-image: url("../img/carne.png");
     background-size: 100%;
     border: none;
 }
